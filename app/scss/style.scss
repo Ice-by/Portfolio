@@ -1,17 +1,321 @@
 
 // // Если в проекте будут нужны следующие плагины, то раскоментить(пути указываем к .css файламБ но расширения не пишем):
-// @import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/normalize.css/normalize";
 
 // // Не забыть удалить в npm_modules из папки со slick файл slick.scss, чтоб прога не выкинула ошибку, т.к. запуталась что брать .css или .scss
-// @import "../../node_modules/slick-carousel/slick/slick";
-// @import "../../node_modules/magnific-popup/dist/magnific-popup";
+@import "../../node_modules/slick-carousel/slick/slick";
+@import "../../node_modules/magnific-popup/dist/magnific-popup";
 
 // Если нужны отдельные файлы под переменные, библиотеки и т.д.(а в папке scss создаем файлы _vars, _libs, _media, а они из-за _.... не будут преобразовываться (импортироваться) в css, т.е. рассматриваются как внутренние(локальные файлы), 
 // _.... еще значит сразу где-то рядом используется, т.е. это  маленькая часть чего-то большого:
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "colors";
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal; 
+    font-weight: normal;
+    color: $text-main;  
+}
+.body{
+    background-color: #F8F8F8;
+}
+
+.container{
+    width: 1600px;
+    background-color: $main;
+    border: 15px solid $main;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.header{ 
+    position: absolute;
+    left: 350px;
+    z-index: 5;    
+}
+.submenu{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+        
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 200px;
+    }
+    &__item{
+        width: 130px;
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-main-art;
+    }
+}
+
+.aside{
+    height: 860px;         
+    background-color: $fone;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;   
+    
+    &__wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    & img{
+        width: 180px;
+        height: 210px;   
+        border-top-left-radius: 20px; 
+    }
+    &__text{
+        width: 100px;        
+        font-size: 12px;
+        line-height: 14px;
+        color: $text-main-art;
+    }
+    &__text-link{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color:$text-highlight;
+    }
+}
+
+.name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    padding-right: 10px;
+
+    & span{
+        display: block;
+        text-align: end;
+    }
+}
+.proffesional{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin-bottom: 50px;
+}
+.menu{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 5px;
+    margin-bottom: 130px;
+      
+    &__item{
+        font-weight: bold;
+        padding-left: 10px;        
+        margin-bottom: 8px;       
+    }
+    &__item:hover{
+        cursor: pointer;
+        border-left: 2px solid $element-main;
+    }
+    &__item:hover.not-border{
+        border: none;
+    }
+    &__item-works{
+        padding-left: 10px;
+        margin-bottom: 8px;
+    }
+    &__item-works:hover{
+        cursor: pointer;
+        border-left: 2px solid $element-main;
+    }
+    &__item-link{
+        font-weight: normal;  
+        color: $text-main-art;      
+    }
+}
+
+.main{
+    max-width: 1380px;
+    width: 100%;
+    background-color: $fone-main;    
+    left: 180px;
+    top: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &__content{
+        max-width: 1380px;
+        width: 100%;
+        height: 860px;
+        background-image: url('../images/fon.jpg');
+        background-repeat: no-repeat;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__lights{
+        position: relative;
+    }
+    &__light{
+        position: absolute;
+
+        &-red1{
+            top: 312px;
+            left: 580px;
+        }
+        &-yellow1{
+            top: 328px;
+            left: 580px;
+        }
+        &-green1{
+            top: 345px;
+            left: 580px; 
+        }
+
+        &-red2{
+            top: 312px;
+            left: 693px;
+        }
+        &-yellow2{
+            top: 328px;
+            left: 693px;
+        }
+        &-green2{
+            top: 345px;
+            left: 693px; 
+        }
+
+        &-side-red1{
+            top: 466px;
+            left: 890px;
+        }
+        &-side-yellow1{
+            top: 479px;
+            left: 890px;
+        }
+        &-side-green1{
+            top: 493px;
+            left: 890px; 
+        }
+        &-side-red2{
+            top: 466px;
+            left: 910px;
+        }
+        &-side-yellow2{
+            top: 479px;
+            left: 910px;
+        }
+        &-side-green2{
+            top: 493px;
+            left: 910px; 
+        }
+
+        &-distance-red1{
+            top: 507px;
+            left: 711px;
+        }
+        &-distance-yellow1{
+            top: 511px;
+            left: 711px;
+        }
+        &-distance-green1{
+            top: 517px;
+            left: 711px; 
+        }
+
+        &-ilumination1{
+            top: 506px;
+            left: 623px; 
+        }
+        &-ilumination2{
+            top: 514px;
+            left: 683px; 
+        }
+    }    
+}
+
+.footer{
+    z-index: 5;
+    position: absolute;
+    top: 850px;    
+    left: 750px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    &-link{
+
+        &__vk{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/facebook.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__facebook{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/facebook.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__instagram{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/instagram.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__telegram{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/instagram.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__viber{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/viber.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__linkedn{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/viber.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__youtube{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/viber.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.hightlight{
+    color: $text-highlight;
+}
 
 
 @import "media";
