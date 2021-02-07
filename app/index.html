@@ -10,24 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body class="body">
-    <div class="container">
-        <header class="header">
-            <nav class="submenu">
-                <ul class="submenu__list">
-                    <li class="submenu__item"><a class="submenu__link hightlight" href="#">Contacts</a></li>
-                    <li class="submenu__item"><a class="submenu__link" href="#">Winter theme</a></li>
-                    <li class="submenu__item"><a class="submenu__link" href="#">Summer theme</a></li>
-                </ul>
-                <ul class="submenu__list">
-                    <li class="submenu__item"><a class="submenu__link" href="#">About project</a></li>
-                </ul>
-            </nav>
-        </header>
-
+    <div class="container"> 
         <aside class="aside">
             <img src="images/foto.jpg" alt="">
             <div class="aside__wrapper">
@@ -37,7 +23,7 @@
                     <ul class="menu__list">
                         <li class="menu__item">Soft Skills</li>
                         <li class="menu__item">Hard Skills</li>
-                        <li class="menu__item">My Works</li>
+                        <li class="menu__item menu__item-counter menu__item-active">My Project</li>
                         <li class="menu__item not-border">
                             <ul class="menu__items-works">
                                 <li class="menu__item-works"><a class="menu__item-link">Faktistorii2</a></li>
@@ -51,13 +37,120 @@
                         </li>                       
                     </ul>                    
                 </nav>
-                <p class="aside__text">This website uses cookies</p>
-                <a href="" class="aside__text-link">accept</a>
+                <div class="aside__footer">
+                    <p class="aside__text">This website uses cookies</p>
+                    <a href="" class="aside__text-link">accept</a>
+                </div>                
             </div>
         </aside>
 
         <main class="main">
+            <header class="header">
+                <nav class="submenu">
+                    <ul class="submenu__list">
+                        <li class="submenu__item"><a class="submenu__link hightlight" href="#">Contacts</a></li>
+                        <li class="submenu__item"><a class="submenu__link" href="#">Winter theme</a></li>
+                        <li class="submenu__item"><a class="submenu__link" href="#">Summer theme</a></li>
+                    </ul>
+                    <ul class="submenu__list">
+                        <li class="submenu__item"><a class="submenu__link" href="#">About project</a></li>
+                    </ul>
+                </nav>
+            </header>
+
             <div class="main__content">
+                <div class="main__content-container">
+
+                    <div class="visualizacion">
+
+                        <section class="projects">
+
+                            <h3 class="projects__title">My project</h3>
+                            <div class="projects__gallery">
+                                <div class="projects__gallery-col">
+                                    <!-- <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s9.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                             -->
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s6.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                            
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s3.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure> 
+                                </div>
+                                <div class="projects__gallery-col">
+                                    <!-- <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s8.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                             -->
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s5.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                            
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s2.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure> 
+                                </div>   
+                                <div class="projects__gallery-col">
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s7.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                            
+                                    <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s4.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>                            
+                                    <!-- <figure class="projects__gallery-item">
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s1.jpg" alt=""></a>
+                                        <figcaption class="projects__gallery-name"></figcaption>
+                                    </figure>  -->
+                                </div>                                                                  
+                            </div>
+
+                        </section>
+                                               
+                    </div>
+
+                    <div class="description">
+
+                        <section class="specification-projects">
+
+                            <h3 class="specification-projects__title">Specification:</h3>
+                            <div class="specification-projects__items">
+                                <div class="specification-projects__item">
+                                    <h4 class="specification-projects__title-text">Представлены проекты:</h4>
+                                    <ul class="specification-projects__list">
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">1. Медиапортал посвященный ВОВ "Факт Истории" (ребрендинг)</a></li>
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">2. Лендинг продвижения Porsche Taycan</a></li>
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">3. Сайт дорожно-строительной компании "Стройдор"</a></li>
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">4. Лендинг туров в Венецию</a></li>
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">5. Информационный лендинг с таймером обратного отсчета на JS</a></li>
+                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">6. Лендинг сервиса по подбору апартаментов</a></li>
+
+                                    </ul>
+                                    <p class="specification-projects__text"></p>
+                                </div>
+
+
+
+
+
+                            </div>  
+
+                        </section> 
+
+                    </div>  
+
+                </div>
+
+
+
+
+
                 <div class="main__lights">
                     <div class="main__lights-front">
                         <div class="main__ligts-item">
@@ -100,17 +193,18 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <a class="footer-link footer-link__vk" href="#"></a>
-            <a class="footer-link footer-link__facebook" href="#"></a>
-            <a class="footer-link footer-link__instagram" href="#"></a>
-            <a class="footer-link footer-link__telegram" href="#"></a>
-            <a class="footer-link footer-link__viber" href="#"></a>
-            <a class="footer-link footer-link__linkedn" href="#"></a>
-            <a class="footer-link footer-link__youtube" href="#"></a>
 
-        </footer>
+            <footer class="footer">
+                <a class="footer-link footer-link__vk" href="#"></a>
+                <a class="footer-link footer-link__facebook" href="#"></a>
+                <a class="footer-link footer-link__instagram" href="#"></a>
+                <a class="footer-link footer-link__telegram" href="#"></a>
+                <a class="footer-link footer-link__viber" href="#"></a>
+                <a class="footer-link footer-link__linkedn" href="#"></a>
+                <a class="footer-link footer-link__youtube" href="#"></a>    
+            </footer>
+        </main>
+        
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
