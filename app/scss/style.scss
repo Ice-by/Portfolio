@@ -78,7 +78,7 @@ body{
         line-height: 16px;
         color:$text-highlight;
     }
-    &__footer{
+    &__footer{       
         padding-left: 15px;
     }
 }
@@ -108,7 +108,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     padding-left: 5px;
-    margin-bottom: 90px;
+    
       
     &__item{
         font-weight: bold;
@@ -116,16 +116,19 @@ body{
         margin-bottom: 8px;
         position: relative;
     }
+    &__items-works{  
+        display: none;              
+        padding-left: 10px; 
+        margin-top: 10px;       
+    }
+      
     &__item:hover{
         cursor: pointer;
         border-left: 2px solid $element-main;
     }
     & .tab-active{
-        border-left: 2px solid $element-main;
-    }
-    &__item:hover.not-border{
-        border: none;
-    }
+        border-left: 2px solid $element-main;        
+    }    
     &__item-counter::after{
         content: '7';
         position: absolute;
@@ -136,7 +139,6 @@ body{
         color: $element-main;
         padding-left: 5px;
     }
-
     &__item-works{
         padding-left: 10px;
         margin-bottom: 8px;
@@ -149,7 +151,17 @@ body{
         font-weight: normal;  
         color: $text-main-art;      
     }
+    &__item:last-child{
+        margin-bottom: 300px;
+    }
 }
+
+.menu__item--project.tab-active + li .menu__items-works{
+    display: block;
+}  
+.menu__item--project.tab-active ~ .menu__item:last-child{
+    margin-bottom: 82px;
+}  
 
 .header{ 
     position: absolute;
@@ -183,7 +195,6 @@ body{
     top: 0;
     left: 0;
 }
-
 
 .soft-skills{
     display: none;
@@ -228,10 +239,11 @@ body{
    
     &__gallery{        
         display: flex;
-        width: 560px;
+        width: 580px;
         height: 650px;
         overflow-y: scroll;
         direction:rtl;
+        padding-right: 10px;
         
         &::-webkit-scrollbar {
             width: 2px;
@@ -244,6 +256,7 @@ body{
     }    
     &__gallery-item{                
         padding: 10px 10px 0 10px;
+        margin-top: 15px;
         border: 2px solid transparent;   
         transition: all 1.5s;              
     }
@@ -252,6 +265,11 @@ body{
         position: relative;
         transform: scale(1.05);
     } 
+    .projects__gallery-item--hover{
+        border: 2px solid $border-hover;
+        position: relative;
+        transform: scale(1.05);
+    }
 }
 
 .about-me{
@@ -295,7 +313,7 @@ body{
 .projects{
     width: 560px;
     height: 720px;
-    background: rgba(28, 51, 69, 0.35);
+    // background: rgba(28, 51, 69, 0.35);
     padding: 10px 0;
 }
 
@@ -322,11 +340,11 @@ body{
 }  
   
 
-.soft-skills-description,
-.hard-skills-description,
-.projects-description{
-    background: rgba(28, 51, 69, 0.35);
-}
+// .soft-skills-description,
+// .hard-skills-description,
+// .projects-description{
+//     background: rgba(28, 51, 69, 0.35);
+// }
 
 
 
@@ -447,7 +465,7 @@ body{
         z-index: 1;
     }
     &__light{
-        // display: none;
+        display: none;
         position: absolute;
 
         &-red1{
