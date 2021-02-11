@@ -108,7 +108,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     padding-left: 5px;
-    margin-bottom: 130px;
+    margin-bottom: 90px;
       
     &__item{
         font-weight: bold;
@@ -120,7 +120,7 @@ body{
         cursor: pointer;
         border-left: 2px solid $element-main;
     }
-    &__item-active{
+    & .tab-active{
         border-left: 2px solid $element-main;
     }
     &__item:hover.not-border{
@@ -182,21 +182,50 @@ body{
     position: absolute; 
     top: 0;
     left: 0;
-    width: 560px;
-    height: 720px;
-    background: rgba(196, 196, 196, 0.35);
+}
+
+
+.soft-skills{
+    display: none;
+
+    &__wrapper{
+        padding-top: 35px;
+        padding-left: 30px;
+
+    }
+    &__item{
+        list-style-image: url('../images/marker-li.svg');  
+        list-style-position: inside;
+        padding-bottom: 15px;    
+        line-height: 30px;  
+    }
+}
+
+.hard-skills{
+    display: none;
+
+    &__wrapper{
+        padding-top: 35px;
+        padding-left: 30px;
+    }
+    &__item,
+    &__sub-item{
+        list-style-image: url('../images/marker-li.svg');  
+        list-style-position: inside;
+        padding-bottom: 10px;    
+        line-height: 25px;  
+    }
+    &__sub-list{
+        padding-top: 10px;
+    }
+    &__sub-item{
+        padding-left: 30px;        
+    }
 }
 
 .projects{    
-
-    &__title{
-        font-size: 40px;
-        line-height: 47px;
-        color: $text-main-title;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+    display: none;
+   
     &__gallery{        
         display: flex;
         width: 560px;
@@ -225,26 +254,129 @@ body{
     } 
 }
 
+.about-me{
+    display: none;
+   
+    &__item,
+    &__sub-item{
+        color: $text-main-title;
+        margin-bottom: 7px;
+
+        & span{
+            color: $text-main-alt;
+        }
+    }
+    &__item:nth-child(9){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    &__sub-list{
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+    &__sub-item{
+        margin-bottom: 20px;
+    }
+    &__sub-title{
+        display: block;
+        margin-bottom: 7px;
+        margin-top: 7px;        
+    }   
+    &__link{
+        color: $text-highlight
+    }
+}
+
+
+
+
+.soft-skills,
+.hard-skills,
+.projects{
+    width: 560px;
+    height: 720px;
+    background: rgba(28, 51, 69, 0.35);
+    padding: 10px 0;
+}
+
+.soft-skills__title,
+// .soft-skills-description__title,
+.hard-skills__title,
+.hard-skills-description__title,
+.projects__title,
+.projects-description__title,
+.about-me__title{
+    font-size: 40px;
+    line-height: 47px;
+    color: $text-main-title;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.soft-skills__item,  
+.hard-skills__item,  
+.projects-description__list-link{
+    color: $text-main-title;
+    font-weight: bold;
+}  
+  
+
+.soft-skills-description,
+.hard-skills-description,
+.projects-description{
+    background: rgba(28, 51, 69, 0.35);
+}
+
+
+
 .description{
     position: absolute; 
     top: 0;
     right: 50px;
     width: 400px;
     height: 720px;
-    background: rgba(196, 196, 196, 0.35);
 }
 
-.specification-projects{
+.soft-skills-description{
+    display: none;
 
-    &__title{
-        font-size: 40px;
-        line-height: 47px;
+    & .tab-item2{
+        display: block;
+    }
+}
+
+.hard-skills-description{
+    display: none;
+    padding: 10px 20px;
+
+    & .tab-item2{
+        display: block;
+    }
+    &__article{
+        margin-top: 30px;        
+    }
+    &__text-title{
+        font-weight: bold;
+        color: $text-fone-title;
+    }
+    &__text{
         color: $text-main-title;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }    
+        & span{
+            display: block;
+            font-weight: bold;
+            color: $text-fone-title;
+            margin-top: 10px;
+        }
+    }
+}
 
+.projects-description{
+    display: none;
+
+    & .tab-item2{
+        display: block;
+    }
     &__items{
         width: 400px;
         height: 650px;
@@ -273,8 +405,6 @@ body{
     }
     &__list-link{
         line-height: 20px;
-        color: $text-main-title;
-        font-weight: bold;
     }  
     &__list-link:hover{        
         color: $text-highlight;        
@@ -314,8 +444,10 @@ body{
 
     &__lights{
         position: relative;
+        z-index: 1;
     }
     &__light{
+        // display: none;
         position: absolute;
 
         &-red1{
@@ -405,52 +537,45 @@ body{
 
     &-link{
 
+        &__telephone{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/telephone.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__linkedin{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/linkedin.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__skype{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/skype.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__whatsapp{
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/whatsapp.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         &__vk{
             width: 20px;
             height: 20px;
-            background-image: url('../images/facebook.svg');
+            background-image: url('../images/vk.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
-        &__facebook{
+        &__email{
             width: 20px;
             height: 20px;
-            background-image: url('../images/facebook.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &__instagram{
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/instagram.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &__telegram{
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/instagram.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &__viber{
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/viber.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &__linkedn{
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/viber.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &__youtube{
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/viber.svg');
+            background-image: url('../images/email.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -459,6 +584,12 @@ body{
 
 .hightlight{
     color: $text-highlight;
+}
+.tab-item.tab-active{
+    display: block;
+}
+.tab-item2.tab-active{
+    display: block;
 }
 
 

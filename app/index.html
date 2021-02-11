@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Текст с описанием страницы"> 
+    <meta name="description" content="Текст с описанием страницы">
     <meta name="keywords" content="Ключевые слова через запятую">
     <title>My resume, страничка резюме</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,48 +13,51 @@
 </head>
 
 <body class="body">
-    <div class="container"> 
+    <div class="container">
         <aside class="aside">
-            <img src="images/foto.jpg" alt="">
+            <a href="#"><img class="img" src="images/foto.jpg" alt=""></a>
             <div class="aside__wrapper">
-                <h1 class="name hightlight">Tribunalov <span>Alexandr</span></h1>
+                <h1 class="name hightlight"><a class="hightlight" href="#">Tribunalov <span>Alexandr</a></span></h1>
                 <h2 class="proffesional">Frontend developer</h2>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">Soft Skills</li>
                         <li class="menu__item">Hard Skills</li>
-                        <li class="menu__item menu__item-counter menu__item-active">My Project</li>
-                        <li class="menu__item not-border">
+                        <li class="menu__item menu__item-counter tab-active">My Project</li>
+                        <li class="not-border">
                             <ul class="menu__items-works">
-                                <li class="menu__item-works"><a class="menu__item-link" href="http://proekt-2.faktistorii.ru" target="_blank">Faktistorii2</a></li>
+                                <li class="menu__item-works"><a class="menu__item-link"
+                                        href="http://proekt-2.faktistorii.ru" target="_blank">Faktistorii2</a></li>
                                 <li class="menu__item-works"><a class="menu__item-link">Porsche</a></li>
                                 <li class="menu__item-works"><a class="menu__item-link">Venice</a></li>
                                 <li class="menu__item-works"><a class="menu__item-link">Houses</a></li>
                                 <li class="menu__item-works"><a class="menu__item-link">Roadworks</a></li>
-                                <li class="menu__item-works"><a class="menu__item-link" href="works/2/index.html" target="_blank">Radio JS</a></li>
+                                <li class="menu__item-works"><a class="menu__item-link" href="works/2/index.html"
+                                        target="_blank">Radio JS</a></li>
                                 <li class="menu__item-works"><a class="menu__item-link">Internet-market</a></li>
-                                <li class="menu__item-works"><a class="menu__item-link" href="works/8/index.html" target="_blank">Nike</a></li>
+                                <li class="menu__item-works"><a class="menu__item-link" href="works/8/index.html"
+                                        target="_blank">Nike</a></li>
                             </ul>
-                        </li>                       
-                    </ul>                    
+                        </li>
+                        <li class="menu__item">About Me</li>
+                    </ul>
                 </nav>
                 <div class="aside__footer">
                     <p class="aside__text">This website uses cookies</p>
                     <a href="" class="aside__text-link">accept</a>
-                </div>                
+                </div>
             </div>
         </aside>
 
         <main class="main">
             <header class="header">
                 <nav class="submenu">
-                    <ul class="submenu__list">
-                        <li class="submenu__item"><a class="submenu__link hightlight" href="#">Contacts</a></li>
+                    <ul class="submenu__list">                        
                         <li class="submenu__item"><a class="submenu__link" href="#">Winter theme</a></li>
                         <li class="submenu__item"><a class="submenu__link" href="#">Summer theme</a></li>
                     </ul>
                     <ul class="submenu__list">
-                        <li class="submenu__item"><a class="submenu__link" href="#">About project</a></li>
+                        <li class="submenu__item"><a class="submenu__link hightlight" href="#">Contacts</a></li>
                     </ul>
                 </nav>
             </header>
@@ -63,9 +66,60 @@
                 <div class="main__content-container">
 
                     <div class="visualizacion">
+                        
+                        <section class="soft-skills tab-item">
+                            <h3 class="soft-skills__title">Soft Skills</h3>
+                            <div class="soft-skills__wrapper">
+                                <ul class="soft-skills__list">
+                                    <li class="soft-skills__item">Командная работа</li>
+                                    <li class="soft-skills__item">Поиск и анализ информации</li>
+                                    <li class="soft-skills__item">Умение планировать</li>
+                                    <li class="soft-skills__item">Умение слушать</li>
+                                    <li class="soft-skills__item">Деловая коммуникация (навык общения как с частными
+                                        компаниями, так и с гос органами)</li>
+                                    <li class="soft-skills__item">Деловая переписка</li>
+                                    <li class="soft-skills__item">Организаторские навыки</li>
+                                    <li class="soft-skills__item">Управление проектами (успешно осуществил 33 проекта)
+                                    </li>
+                                    <li class="soft-skills__item">Ведение переговоров</li>
+                                    <li class="soft-skills__item">Стрессоустойчив (строительная закалка)</li>
+                                    <li class="soft-skills__item">Логическое мышление</li>
+                                    <li class="soft-skills__item">Чувство юмора</li>
+                                    <li class="soft-skills__item">Ответственность</li>
+                                </ul>
+                            </div>
+                        </section>
 
-                        <section class="projects">
+                        <section class="hard-skills tab-item">
+                            <h3 class="hard-skills__title">Hard Skills</h3>
+                            <div class="hard-skills__wrapper">
+                                <ul class="hard-skills__list">
+                                    <li class="hard-skills__item">HTML</li>
+                                    <li class="hard-skills__item">CSS (а также SASS/SCSS)</li>
+                                    <li class="hard-skills__item">Java Script</li>
+                                    <li class="hard-skills__item">немного PHP (под Wordpress)</li>
+                                    <li class="hard-skills__item">GIT (GitHub, GitLab)</li>
+                                    <li class="hard-skills__item">Gulp</li>
+                                    <li class="hard-skills__item">Webpack</li>
+                                    <li class="hard-skills__item">Figma, Photoshop, Scetch</li>
+                                    <li class="hard-skills__item">JQuery</li>
+                                    <li class="hard-skills__item">Bootstrap</li>
+                                    <li class="hard-skills__item">Swiper, Slick</li>
+                                    <li class="hard-skills__item">Fancybox</li>
+                                    <li class="hard-skills__item">Подходы к верстке:
+                                        <ul class="hard-skills__sub-list">
+                                            <li class="hard-skills__sub-item">Резиновая и адаптивная верстка</li>
+                                            <li class="hard-skills__sub-item">Mobile first и desktop first</li>
+                                            <li class="hard-skills__sub-item">БЭМ</li>
+                                            <li class="hard-skills__sub-item">Perfect Pixel</li>
+                                        </ul>
+                                    </li>
+                                    <li class="hard-skills__item">English Pre-Intermediate</li>
+                                </ul>
+                            </div>
+                        </section>
 
+                        <section class="projects tab-item tab-active">
                             <h3 class="projects__title">My project</h3>
                             <div class="projects__gallery">
                                 <div class="projects__gallery-col">
@@ -74,79 +128,177 @@
                                         <figcaption class="projects__gallery-name"></figcaption>
                                     </figure>                             -->
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s6.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img"
+                                                src="images/projects/s6.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure>                            
+                                    </figure>
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s3.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img"
+                                                src="images/projects/s3.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure> 
+                                    </figure>
                                 </div>
                                 <div class="projects__gallery-col">
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="works/8/index.html" target="_blank"><img class="projects__gallery-img" src="images/projects/s8.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="works/8/index.html" target="_blank"><img
+                                                class="projects__gallery-img" src="images/projects/s8.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure>                            
+                                    </figure>
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s5.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img"
+                                                src="images/projects/s5.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure>                            
+                                    </figure>
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="works/2/index.html" target="_blank"><img class="projects__gallery-img" src="images/projects/s2.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="works/2/index.html" target="_blank"><img
+                                                class="projects__gallery-img" src="images/projects/s2.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure> 
-                                </div>   
+                                    </figure>
+                                </div>
                                 <div class="projects__gallery-col">
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="http://proekt-2.faktistorii.ru" target="_blank"><img class="projects__gallery-img" src="images/projects/s7.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="http://proekt-2.faktistorii.ru"
+                                            target="_blank"><img class="projects__gallery-img"
+                                                src="images/projects/s7.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure>                            
+                                    </figure>
                                     <figure class="projects__gallery-item">
-                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s4.jpg" alt=""></a>
+                                        <a class="projects__gallery-link" href="#"><img class="projects__gallery-img"
+                                                src="images/projects/s4.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
-                                    </figure>                            
+                                    </figure>
                                     <!-- <figure class="projects__gallery-item">
                                         <a class="projects__gallery-link" href="#"><img class="projects__gallery-img" src="images/projects/s1.jpg" alt=""></a>
                                         <figcaption class="projects__gallery-name"></figcaption>
                                     </figure>  -->
-                                </div>                                                                  
+                                </div>
                             </div>
-
                         </section>
-                                               
+
+                        <section class="about-me tab-item">
+                            <h3 class="about-me__title">About Me</h3>
+                            <div class="about-me__wrapper">
+                                <ul class="about-me__list">
+                                    <li class="about-me__item">День рождения: <span>31 января 1989г.</span></li>
+                                    <li class="about-me__item">Город проживания: <span>Минск</span></li>
+                                    <li class="about-me__item">Родной язык: <span>Русский</span></li>
+                                    <li class="about-me__item">Английский язык: <span>Pre-Intermediate</span></li>
+                                    <li class="about-me__item">Возможен переезд: <span>Россия(Москва, Санкт-Петербург, Краснодар, Владивосток, Калининград, Ростов-на-Дону, Сочи), Украина(Киев, Львов, Одесса)</span></li>
+                                    <li class="about-me__item">Возможные варианты работы: <span>полная занятость, частичная занятость, удаленная работа, стажировка, проектная работа, волонтерство</span></li>
+                                    <li class="about-me__item">Возможные графики работы: <span>полный день, удаленная работа, гибкий график, сменный график</span></li>
+                                    <li class="about-me__item">Есть водительское удостоверение: <span>категория B</span></li>
+                                    <li class="about-me__item">Образование:
+                                        <ul class="about-me__sub-list">
+                                            <li class="about-me__sub-item">2006-2011 (дневное высшее)
+                                                <span class="about-me__sub-title">МГУП, Могилев</span>
+                                                <p class="about-me__sub-text">
+                                                    Механический факультет, Техника и физика низких температур
+                                                </p>
+                                            </li>
+                                            <li class="about-me__sub-item">2006-2011 (вечернее высшее)
+                                                <span class="about-me__sub-title">МГУП, Могилев</span>
+                                                <p class="about-me__sub-text">
+                                                    Экономический факультет, Бухгалтерский учет, анализ и аудит
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="about-me__item">Номер телефона для контактов: <a class="about-me__link" href="tel:375299355435">+375 (29) 935-54-35 (A1)</a></li>
+                                    <li class="about-me__item">Почтовый ящик для контактов: <a class="about-me__link" href="documentsbox@yandex.ru">documentsbox@yandex.ru</a></li>
+                                </ul>
+                            </div>
+                        </section>
+
                     </div>
+
 
                     <div class="description">
 
-                        <section class="specification-projects">
+                        <section class="soft-skills-description tab-item2">
+                            <h3 class="soft-skills-description__title"></h3>
 
-                            <h3 class="specification-projects__title">Specification:</h3>
-                            <div class="specification-projects__items">
-                                <div class="specification-projects__item">
-                                    <h4 class="specification-projects__title-text">Представлены проекты:</h4>
-                                    <ul class="specification-projects__list">
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="http://proekt-2.faktistorii.ru" target="_blank">1. Медиапортал посвященный ВОВ "Факт Истории" (ребрендинг) (HTML, SCSS, JS, PHP, Wordpress) (в работе)</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">2. Лендинг продвижения Porsche Taycan</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">3. Сайт дорожно-строительной компании "Стройдор"</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">4. Лендинг туров в Венецию</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="works/2/index.html" target="_blank">5. Информационный лендинг с таймером обратного отсчета на JS (only desktop)</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">6. Лендинг сервиса по подбору апартаментов</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="#">7. Интернет-магазин (в разработке)</a></li>
-                                        <li class="specification-projects__list-item"><a class="specification-projects__list-link" href="works/8/index.html">8. Магазин кросcовок Nike (HTML, SCSS, JS) (в работе)<img class="specification-projects__list-img" src="images/nike.svg"></a></li>
+                        </section>
+
+                        <section class="hard-skills-description tab-item2">
+                            <h3 class="hard-skills-description__title">Experience</h3>
+                            <article class="hard-skills-description__article">
+                                <h4 class="hard-skills-description__text-title">ОАО "Евроторг"</h4>
+                                <p class="hard-skills-description__text">
+                                    <span>Ведущий инженер-проектировщик</span>
+                                    Разработка и проектирование инженерных систем, эскизирование металлических
+                                    конструкций, рам, площадок под оборудование. Наложение оборудование на архитектурных
+                                    видах и визуализациях. Работа в таких САПР как AutoCAD и Компас-3D (знаком в 3Ds Max
+                                    и SolidWorks). Работа со смежниками. Решение технических и экономических вопросов
+                                    связанных с закупкой оборудования (подготовка технических заданий на закупку,
+                                    проверка тендерных предложений на соответствие, проведение самих тендеров,
+                                    определение победителей), его эксплуатацией и обслуживанием. Взаимодействие с
+                                    различными службами внутри организации, а также со сторонними, включая
+                                    проектировщиков. Работа с государственными органами экспертизы проектов.
+                                    Непосредственный контроль на самих объектах (авторский надзор), управление
+                                    монтажными бригадами.
+                                </p>
+                            </article>
+                            <article class="hard-skills-description__article">
+                                <h4 class="hard-skills-description__text-title">ОАО "БелГипроАгроПищеПром"</h4>
+                                <p class="hard-skills-description__text">
+                                    <span>Инженер-проектировщик 2D/3D</span>                                    
+                                    Разработка и проектирование инженерных систем. Работа со смежниками. Работа в САПР
+                                    AutoCAD, Компас-3D и программном комплексе Revit. Работа с государственной
+                                    экспертизой. Непосредственный контроль на самих объектах (авторский надзор).
+                                </p>
+                            </article>
+                        </section>
+
+                        <section class="projects-description tab-item2 tab-active">
+                            <h3 class="projects-description__title">Specification:</h3>
+                            <div class="projects-description__items">
+                                <div class="projects-description__item">
+                                    <h4 class="projects-description__title-text">Представлены проекты:</h4>
+                                    <ul class="projects-description__list">
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link"
+                                                href="http://proekt-2.faktistorii.ru" target="_blank">1. Медиапортал
+                                                посвященный ВОВ "Факт Истории" (ребрендинг) (HTML, SCSS, JS, PHP,
+                                                Wordpress) (в работе)</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="#">2. Лендинг продвижения
+                                                Porsche Taycan</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="#">3. Сайт
+                                                дорожно-строительной компании "Стройдор"</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="#">4. Лендинг туров в
+                                                Венецию</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="works/2/index.html"
+                                                target="_blank">5. Информационный лендинг с таймером обратного отсчета
+                                                на JS (only desktop)</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="#">6. Лендинг сервиса по
+                                                подбору апартаментов</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="#">7. Интернет-магазин (в
+                                                разработке)</a></li>
+                                        <li class="projects-description__list-item"><a
+                                                class="projects-description__list-link" href="works/8/index.html">8.
+                                                Магазин кросcовок Nike (HTML, SCSS, JS) (в работе)<img
+                                                    class="projects-description__list-img" src="images/nike.svg"></a>
+                                        </li>
 
                                     </ul>
-                                    <p class="specification-projects__text"></p>
+                                    <p class="projects-description__text"></p>
                                 </div>
+                            </div>
+                        </section>
 
+                        <section class="soft-skills-description tab-item2">
+                            <h3 class="soft-skills-description__title"></h3>
 
+                        </section>
 
-
-
-                            </div>  
-
-                        </section> 
-
-                    </div>  
+                        
+                    </div>
 
                 </div>
 
@@ -198,16 +350,15 @@
             </div>
 
             <footer class="footer">
-                <a class="footer-link footer-link__vk" href="#"></a>
-                <a class="footer-link footer-link__facebook" href="#"></a>
-                <a class="footer-link footer-link__instagram" href="#"></a>
-                <a class="footer-link footer-link__telegram" href="#"></a>
-                <a class="footer-link footer-link__viber" href="#"></a>
-                <a class="footer-link footer-link__linkedn" href="#"></a>
-                <a class="footer-link footer-link__youtube" href="#"></a>    
+                <a class="footer-link footer-link__telephone" href="tel:375299355435"></a>
+                <a class="footer-link footer-link__linkedin" href="https://linkedin.com/in/alexander-tribunalov-922a9519a" target="_blank"></a>
+                <a class="footer-link footer-link__skype" href="Skype:live:.cid.4431e883000aff51" target="_blank"></a>
+                <a class="footer-link footer-link__whatsapp" href="https://wa.me/80299355435" target="_blank"></a>
+                <a class="footer-link footer-link__vk" href="https://vk.com/iceby" target="_blank"></a>
+                <a class="footer-link footer-link__email" href="mailto:documentsbox@yandex.ru"></a>                
             </footer>
         </main>
-        
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
