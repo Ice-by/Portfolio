@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> юзали только для настройки select(ов), из CSS можно удалить -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <div class="header__btn-menu">
+                            <span class="icon-bars"></span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Главная </a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            Все для строительства дорог
+                        </div>
+                        <div class="slider__text">
+                            Полный спектр услуг и решений для строительства дорог даже в самых непроходимых местах
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            Все для строительства дорог
+                        </div>
+                        <div class="slider__text">
+                            Полный спектр услуг и решений для строительства дорог даже в самых непроходимых местах
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            Все для строительства дорог
+                        </div>
+                        <div class="slider__text">
+                            Полный спектр услуг и решений для строительства дорог даже в самых непроходимых местах
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="header__top">
+        <div class="container">
+            <div class="header__contacts">
+                <a class="header__phone" href="tel:74955087351">+7 (495) 508 73 51</a>
+                <a class="header__email" href="#">stroydor@gmail.com</a>
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                    Бесплатная консультация
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services__top">
+                <div class="services__title-box">
+                    <div class="services__title">Наши услуги</div>
+                    <div class="services__text">
+                        Комплексный подход к решению ваших вопросов, своевременная подходы и
+                        качество
+                    </div>
+                </div>
+                <div class="services__btn">
+                    <a href="#">
+                        Показать все услуги
+                    </a>
+                </div>
+            </div>
+            <div class="services__items">
+                <div class="services__item">
+                    <img class="services__img" src="images/services-1.png" alt="">
+                    <div class="services__item-title">
+                        Геодезические услуги
+                    </div>
+                    <div class="services__item-text">
+                        Полный комплекс геодезических услуг. Любая проектная и инженерно-строительная деятельность.
+                    </div>
+                    <div class="services__item-btn">
+                        <a class="services__item-link" href="#">Подробнее</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <img class="services__img" src="images/services-2.png" alt="">
+                    <div class="services__item-title">
+                        Устройство дорожных оснований
+                    </div>
+                    <div class="services__item-text">
+                        Устройство корыта с основанием, глубиной до 0,35—0,4 м вдоль оси земляного полотна. Отрытие
+                        корыт, как правило, автогрейдерами.
+                    </div>
+                    <div class="services__item-btn">
+                        <a class="services__item-link" href="#">Подробнее</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <img class="services__img" src="images/services-3.png" alt="">
+                    <div class="services__item-title">
+                        Асфальтирование дорог
+                    </div>
+                    <div class="services__item-text">
+                        Подготовка под покрытия и само покрытие из горячих или холодных асфальтобетонных смесей
+                    </div>
+                    <div class="services__item-btn">
+                        <a class="services__item-link" href="#">Подробнее</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__title">
+                    О компании
+                </div>
+                <div class="about__text">
+                    Наша компания специализируется на укладке и ремонте дорожного покрытия, а также последующем
+                    обслуживании дорожного полотна и благоустройстве прилегающих территорий. Деятельность компании
+                    полностью регулируется международными стандартами, что подтверждается необходимой разрешительной
+                    документацией. Оказываем услуги как частные заказчики, так и муниципальным службам.
+                </div>
+                <a href="#" class="about__btn default-btn">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <div class="form__inner">
+                <div class="form__content">
+                    <div class="form__title-box">
+                        <div class="form__title">Получить консультацию</div>
+                        <div class="form__text">
+                            Комплексный подход к вашему вопросу, своевременная помощь, качественное решение задач
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <form action="">
+                            <div class="form__box-inner">
+                                <div class="form__box-left">
+                                    <label>
+                                        E-mail
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Контактный телефон
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        ФИО
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Тема вопроса
+                                        <select>
+                                            <option>Асфальтирование</option>
+                                            <option>Подготовка под полотна</option>
+                                            <option>Благоустройство</option>
+                                            <option>Другое</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form__box-right">
+                                    <label>
+                                        Сообщение
+                                        <textarea></textarea>
+                                    </label>
+                                    <button class="default-btn" type="submit">Получить консультацию</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Тысячи километров отремонтированных дорог
+                    </div>
+                    <div class="advantages__text">
+                        Мы умеем сделать из старых разбитых дорог практически не отличимое по ровности и прочности от
+                        нового покрытие
+                    </div>
+                </div>
+
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Десятки тысяч километров новых дорог
+                    </div>
+                    <div class="advantages__text">
+                        Наш опыт измеряется десятками тысяч проложенных новых дорожек, дорог и магистралей по самым
+                        новым технологиям
+                    </div>
+                </div>
+
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Тысячи гектар обустроенных территорий
+                    </div>
+                    <div class="advantages__text">
+                        Мы обустроили тысячи гектар придорожных территорий в соответствии с последними тенденциями
+                        ландшафтного дизайна
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__top">
+                <div class="news__title-box">
+                    <div class="news__title">Новости компании</div>
+                    <div class="news__text">
+                        Мы развиваемся, много работаем, двигаемся вперед, а значит у нас есть, что вам рассказать
+                    </div>
+                </div>
+                <div class="news__btn">
+                    <a href="#">
+                        Открыть все новости
+                    </a>
+                </div>
+            </div>
+            <div class="news__inner">
+                <div class="news__slider">
+                    <div class="news__slider-inner">
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Укладка асфальта и благоустройство
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день коллектив компании объединяет высокопрофессиональных экспертов
+                                имеющих специализации во всех областях дорожного строительства. Наш автопарк представлен
+                                огромным количеством дорожной строительной техники. И все это позволяет нам браться за
+                                задачу любой сложности и успешно ее реализовать.
+                            </div>
+                            <div class="news__slider-author">
+                                Андрей Клементьев, генеральный директор компании СТРОЙДОР
+                            </div>
+                        </div>
+
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Укладка асфальта и благоустройство
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день коллектив компании объединяет высокопрофессиональных экспертов
+                                имеющих специализации во всех областях дорожного строительства. Наш автопарк представлен
+                                огромным количеством дорожной строительной техники. И все это позволяет нам браться за
+                                задачу любой сложности и успешно ее реализовать.
+                            </div>
+                            <div class="news__slider-author">
+                                Андрей Клементьев, генеральный директор компании СТРОЙДОР
+                            </div>
+                        </div>
+
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Укладка асфальта и благоустройство
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день коллектив компании объединяет высокопрофессиональных экспертов
+                                имеющих специализации во всех областях дорожного строительства. Наш автопарк представлен
+                                огромным количеством дорожной строительной техники. И все это позволяет нам браться за
+                                задачу любой сложности и успешно ее реализовать.
+                            </div>
+                            <div class="news__slider-author">
+                                Андрей Клементьев, генеральный директор компании СТРОЙДОР
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="news__blog" href="#">
+                    <div class="news__images">
+                        <img src="images/news-1.jpg" alt="">
+                        <div class="news__date">18.10</div>
+                    </div>
+                    <div class="news__blog-title">
+                        Приятная новость
+                    </div>
+                    <div class="news__blog-text">
+                        Наша компания стала крупнее! Открытием строительно-монтажного подразделения в Санкт-Петербурге
+                        был отпразднован профессиональный праздник День дорожного работника.
+                    </div>
+                </a>
+                <a class="news__blog" href="#">
+                    <div class="news__images">
+                        <img src="images/news-2.jpg" alt="">
+                        <div class="news__date">03.08</div>
+                    </div>
+                    <div class="news__blog-title">
+                        Новые машины
+                    </div>
+                    <div class="news__blog-text">
+                        Наш парк пополнился новой техникой! В состав бригад поступили новые грейдеры, катки и самосвалы.
+                        Теперь работа будет выполнятся еще качественнее и быстрее.
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <div class="footer__title">
+                            Комплексное строительство дорог
+                        </div>
+                        <div class="footer__text">
+                            Самый полный список услуг на строительство и благоустройство дорог
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                            Бесплатная консультация
+                        </a>
+                        <ul class="footer__list">
+                            <li><a class="footer__phone" href="tel:74955087351">+7 (495) 508 73 51</a></li>
+                            <li><a href="#">stroydor@gmail.com</a></li>
+                            <li><a class="footer__adress" href="#">Москва, Красная пл., 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__map">
+                        <iframe height="250px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1671.8684708413123!2d37.62004780856282!3d55.75567075000479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a598b4552fd%3A0xd2f2265b70fe6a05!2z0JPQo9Cc!5e0!3m2!1sru!2sby!4v1599504920976!5m2!1sru!2sby"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="copy__text">
+                    © 2020 Template by Aliaksandr Trybunalau. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
